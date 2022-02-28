@@ -46,4 +46,43 @@ The main challenge I encountered with this project was the size of the dataset i
 #### Results
 My final Analysis of the Kickstarter campaign allowed me to draw the conclusions that late spring and early summer are the times of year with the most successful Kickstarter campiagns for plays, and further that Louise should lower her goal amount to ensure that her Kickstarter play is fully funded.  
  
+# Challenge Analysis
+
+Written Analysis for Challenge 1
+---
+
+####  Overview of Challenge
+Louise’s play *Fever* nearly met its fundraising goal, and now, she wants to know how different campaigns did in relation to their launch dates and their funding goals. To do so I will create two different charts to visualize trends in the data. 
+
+#### Analysis
+Firstly, because Louise wanted to compare outcomes of kickstarters based on launch dates I had to calculate the years from the date created conversion column. I used to Year formula to calculate, and input the calculation into a new Years column.
+
+![Years](https://user-images.githubusercontent.com/99688417/155912882-65a28975-edc9-4376-aec4-2c32a739c101.png)
+
+I had already analyized much of the kickstarter data by now so I quickly created another pivot chart that compared successful, failed, and canceled campigns and filterd the chart to show outcomes filtered by Year and Category. (See Resource Folder). 
+
+Next Lousie wanted me to create another chart what would visualize the percentage of successful, failed, and canceled plays based on the funding goal amount. To do so I needed to use the Countifs command. I created ranges of goal amounts and used the countif formula in excel to count the number of plays with a given outcome. 
+
+![Outcomevsgoaltable](https://user-images.githubusercontent.com/99688417/155913365-2953a213-0b63-4569-a949-496930df94a7.png)
+
+Using this table I was able to correctly chart the outcomes of the play subcateogry based on the fundraising goal. (see Resource Folder) 
+
+#### Challenges
+The main challenge I encountered was creating the ranges for the countifs formula in excel, with so many different ranges writting out each countif formular was very time consuming. My solution to help save some time was to save the base countif formula in a notepad and copy and paste the base formula only changing the range when I need to.
+
+#### Results 
+After further examination of kickstarter campaigns in relation to their goal and launch dates I could conclude that, from the Theater Outcomes Based on Launch Date chart I created it can be concluded that the spring and summer months have a higher success rate for theater kickstarter campaigns, and also theres a fall off in successful campiagns in the winter months. Furthermore, from the GoalsvsOutcomes chart I can conclude that the percentage of successful kickstarter plays gradually falls as the fundraising goal gets higher. Aside from a large spike in plays with a goal from $35000-45000, plays with higher fundraising goals are less likely to be successful 
+Despite my detailed analysis of kickstarter campiagns there are still limitations to the data in that the data set contains outliers and is not soley based on theater kickstarters. Furtherermore it would be benfical to include charts that visualize more specific details about successful kickstarters, this would make it much easier for Louise to mirror them. 
+
+Finished Kickstarter analysis
+---
+[Kickstarter_Challenge.xlsx](https://github.com/mattstreet16/Kickstarter-analysis/files/8150196/Kickstarter_Challenge.xlsx)
+
+Resource Folder
+----
+
+![Theater Outcomes by Launch Date](https://user-images.githubusercontent.com/99688417/155915448-66aece36-b00d-4e6c-8a9d-7787c098dff0.png)
+
+![Outcomes_vs_Goals](https://user-images.githubusercontent.com/99688417/155915478-41c4ffd7-3ca1-495d-9d28-6cb855b048a8.png)
+
 
